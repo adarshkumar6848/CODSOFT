@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>Student Management Web Application</display-name>
+  
+<!-- AddStudent Servlet Mapping  -->
+  <servlet>
+    <servlet-name>AddStudent</servlet-name>
+    <servlet-class>com.servlets.AddStudent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddStudent</servlet-name>
+    <url-pattern>/AddStudent</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Display Servlet Mapping-->
+  <servlet>
+    <servlet-name>Display</servlet-name>
+    <servlet-class>com.servlets.Display</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Display</servlet-name>
+    <url-pattern>/display</url-pattern>
+    <url-pattern>/student-management-system/display</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Search Servlet Mapping -->
+  <servlet>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>com.servlets.Search</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- RemoveStudent Servlet Mapping  -->
+  <servlet>
+    <servlet-name>RemoveStudent</servlet-name>
+    <servlet-class>com.servlets.RemoveStudent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RemoveStudent</servlet-name>
+    <url-pattern>/RemoveStudent</url-pattern>
+  </servlet-mapping>
+  
+    <!-- UpdateStudent Servlet Mapping  -->
+  <servlet>
+    <servlet-name>UpdateStudent</servlet-name>
+    <servlet-class>com.servlets.UpdateStudent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateStudent</servlet-name>
+    <url-pattern>/UpdateStudent</url-pattern>
+  </servlet-mapping>
+  
+    <!-- GetStudent Servlet Mapping  -->
+  <servlet>
+    <servlet-name>GetStudent</servlet-name>
+    <servlet-class>com.servlets.GetStudent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>GetStudent</servlet-name>
+    <url-pattern>/GetStudent</url-pattern>
+  </servlet-mapping>
+  
+   <!-- Welcome file -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>
